@@ -1,207 +1,194 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<!-- Header -->
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kevin McCarthy | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
+</head>
+
+<body>
+  <!-- Navigation Section -->
     <nav id="desktop-nav">
-      <div class="logo">Kevin McCarthy</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#activities">Activities</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
+        <div class="logo">Kevin McCarthy</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#activities">Activities</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
     </nav>
     <nav id="hamburger-nav">
-      <div class="logo">Kevin McCarthy</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
+        <div class="logo">Kevin McCarthy</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul>
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#activities" onclick="toggleMenu()">Activities</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#activities" onclick="toggleMenu()">Activities</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
     </nav>
+
+    <!-- Profile Section -->
     <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Kevin McCarthy</h1>
-        <p class="section__text__p2">Cybersecurity Student @ RIT</p>
-        <div class="btn-container">
-            <!-- Add Updated Resume When Applicable -->
-          <button class="btn btn-color" onclick="window.open('./assets/kdm-resume.pdf')">Resume</button> 
-          <button class="btn btn-color" onclick="location.href='./#contact'">Contact Info</button>
-        </div>
-        <div id="socials-container">
-          <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/kev-mac/'"/>
-          <img src="./assets/github.png" alt="Github Profile" class="icon" onclick="location.href='https://github.com/KevMac383/'"/>
-        </div>
-      </div>
-    </section>
-    <section id="about">
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
         <div class="section__pic-container">
-          <img src="./assets/about-pic2.png" alt="" class="about-pic"/>
+            <img src="./assets/profile-pic.png" alt="Profile Picture" />
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img src="./assets/skills.png" alt="" class="icon"/>
-              <h3>Working Knowledge</h3>
-              <p>Incident Response, Digital Forensics, Ethical Hacking, and Network Security </p>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Kevin McCarthy</h1>
+            <p class="section__text__p2">Cybersecurity Student</p>
+            <div class="btn-container">
+                <button class="btn btn-color" onclick="window.open('./assets/kdm-resume.pdf')">Resume</button>
+                <button class="btn btn-color" onclick="location.href='./#contact'">Contact Info</button>
             </div>
-            <div class="details-container">
-              <img src="./assets/education.png" alt="" class="icon" />
-              <h3>Education</h3>
-              <p>Bachelors of Science in Cybersecurity<br />Minor in System Administration</p>
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/kev-mac/" target="_blank">
+                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
+                </a>
+                <a href="https://github.com/KevMac383/" target="_blank">
+                    <img src="./assets/github.png" alt="Github" class="icon" />
+                </a>
             </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-              reprehenderit et laborum, rem, dolore eum quod voluptate
-              exercitationem nobis, nihil esse debitis maxime facere minus sint
-              delectus velit in eos quo officiis explicabo deleniti dignissimos.
-              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-              reiciendis ea magnam? Nulla, impedit fuga!
-            </p>
-          </div>
         </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#skills'"/>
     </section>
-    <section id="activities">
-      <h1 class="title">Activities</h1>
-      <div class="skills-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/activity-1.png" alt="" class="project-img"/>
+   
+    <!-- About Section -->
+    <section id="about">
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="Professional Picture" class="about-pic" />
             </div>
-            <h2 class="skills-sub-title project-title">Activity One</h2>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/activity-2.png" alt="" class="project-img"/>
-            </div>
-            <h2 class="skills-sub-title project-title">Activity Two</h2>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img src="./assets/activity-3.png" alt="" class="project-img"/>
-            </div>
-            <h2 class="skills-sub-title project-title">Activity Three</h2>
-            <!-- <div class="btn-container">
-                <button class="btn btn-color project-btn" onclick="location.href='https://github.com/'"> Github</button>
-            </div> -->
-          </div>
-        </div>
-      </div>
-      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-    </section>
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="skills-details-container">
-          <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="project-image-container">
-                <img src="./assets/digital-forensics.png" alt=""class="project-img"/>
-              </div>
-              <h2 class="skills-sub-title project-title">Project One</h2>
-              <p class="project-description">
-                A brief description of Project One goes here. This could highlight the main features or technologies used.
-              </p>
-              <div class="btn-container project-links">
-                <button class="btn btn-color project-btn" onclick="location.href='https://github.com/'"> Github </button>
-                <button class="btn btn-color project-btn" onclick="location.href='https://livedemo.com/'"> Live Demo </button>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/skills.png" alt="" class="icon" />
+                        <h3>Working Knowledge</h3>
+                        <p>Incident Response, Digital Forensics, Ethical Hacking, and Network Security</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="" class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelors in Cybersecurity<br />Minor in System Administration</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis reprehenderit et laborum, rem,
+                        dolore eum quod voluptate exercitationem nobis, nihil esse debitis maxime facere minus sint
+                        delectus velit in eos quo officiis explicabo deleniti dignissimos. Eligendi illum libero dolorum
+                        cum laboriosam corrupti quidem, reiciendis ea magnam? Nulla, impedit fuga!
+                    </p>
                 </div>
             </div>
-          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'"/>
-      </section>
+    </section>
+
+    <!-- Activities Section -->
+    <section id="activities">
+      <h1 class="title">Activities</h1>
+      <div class="about-containers">
+          <div class="details-container color-container">
+              <div class="article-container">
+                  <img src="./assets/activity-1.png" alt="" class="project-img"/>
+              </div>
+              <h2 class="activities-sub-title">RITSEC</h2>
+          </div>
+          <div class="details-container color-container">
+              <div class="article-container">
+                  <img src="./assets/activity-2.png" alt="" class="project-img"/>
+              </div>
+              <h2 class="activities-sub-title">Activity Two</h2>
+          </div>
+          <div class="details-container color-container">
+              <div class="article-container">
+                  <img src="./assets/activity-3.png" alt="" class="project-img"/>
+              </div>
+              <h2 class="activities-sub-title">Activity Three</h2>
+          </div>
+      </div>
+  </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="details-container color-container">
+            <img src="./assets/digital-forensics.png" alt="" class="project-img" />
+            <div class="project-card-container">
+                <h2 class="project-sub-title project-title">Project One</h2>
+                <p class="project-description">
+                    A brief description of Project One goes here. This could highlight the main features or technologies
+                    used.
+                </p>
+                <div class="btn-container project-links">
+                    <a href="https://github.com/" target="_blank" class="btn btn-color project-btn">Github</a>
+                    <a href="https://livedemo.com/" target="_blank" class="btn btn-color project-btn">Live Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
     <section id="skills">
         <h1 class="title">Skills</h1>
-        <div class="skills-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <h2 class="skills-sub-title">Coding Languages</h2>
-              <div class="article-container">
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>Python</h3> </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>Java</h3> </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>C/C++</h3> </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>Powershell</h3> </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>Bash</h3> </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>MySQL</h3> </div>
-                </article>
-                <article>
-                  <img src="./assets/checkmark.png" alt="" class="icon"/>
-                  <div> <h3>x86 Assembly</h3> </div>
-                </article>
-              </div>
+        <div class="details-container">
+            <h2 class="skills-sub-title">Coding Languages</h2>
+            <div class="article-container">
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Python</h3></div></article>
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Java</h3></div></article>
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>C/C++</h3></div></article>
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Powershell</h3></div></article>
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Bash</h3></div></article>
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>MySQL</h3></div></article>
+                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>x86 Assembly</h3></div></article>
             </div>
-          </div>
         </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-      </section>
-    <section id="contact">
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt=""class="icon contact-icon email-icon"/>
-          <p><a href="mailto:kdmcyber00@gmail.com">kdmcyber00@gmail.com</a></p>
     </section>
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#top">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#activities">Activities</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-          </ul>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="" class="icon contact-icon email-icon" />
+                <p><a href="mailto:kdmcyber00@gmail.com">kdmcyber00@gmail.com</a></p>
+            </div>
         </div>
-      </nav>
-      <p>Copyright &#169; 2025 Kevin McCarthy</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class="nav-links">
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#activities">Activities</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; 2025 Kevin McCarthy</p>
     </footer>
+
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
