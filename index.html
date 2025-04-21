@@ -53,7 +53,7 @@
         <div class="section__text">
             <p class="section__text__p1">Hello, I'm</p>
             <h1 class="title">Kevin McCarthy</h1>
-            <p class="section__text__p2">Cybersecurity Student @ RIT</p>
+            <p class="section__text__p2">BS Cybersecurity Student @ RIT</p>
             <div class="btn-container">
                 <!-- Update Resume When Necessary -->
                 <button class="btn btn-color" onclick="window.open('./assets/kdm-resume.pdf')">Resume</button>
@@ -142,16 +142,91 @@
     <section id="projects">
         <h1 class="title">Projects</h1>
         <div class="details-container project-container">
-            <img src="./assets/digital-forensics.png" alt="" class="project-img" />
+            <img src="./assets/vfw.png" alt="" class="project-img" />
             <div class="project-card-container">
-                <h2 class="project-sub-title project-title">Digital Forensics Case Study</h2>
+                <h2 class="project-sub-title project-title">Freddie L. Jackson Citizenship Award</h2>
                 <p class="project-description">
-                    A brief description of Project One goes here. This could highlight the main features or technologies
-                    used.
+                    Initiative's founder and active manager establishing the website, eligibility criteria, 
+                    and selection process for evaluating award recipient submissions, enabling the distribution 
+                    of over $1,000 to underrepresented students attending West Haven High School in Connecticut, 
+                    directly supporting their educational pursuits.
                 </p>
                 <div class="btn-container project-links">
-                    <a href="https://github.com/" target="_blank" class="btn btn-color project-btn">Github</a>
-                    <a href="https://livedemo.com/" target="_blank" class="btn btn-color project-btn">Live Demo</a>
+                    <a href="https://www.fljcitizenshipaward.com/" target="_blank" class="btn btn-color project-btn">Award Website</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-container project-container">
+            <img src="./assets/digital-forensics.png" alt="" class="project-img" />
+            <div class="project-card-container">
+                <h2 class="project-sub-title project-title">Digital Forensics: Case Study</h2>
+                <p class="project-description">
+                    Analysis and extraction of hidden data were performed across two distinct scenarios using digital forensics techniques. 
+                    The first scenario involved a complex drug smuggling operation, requiring the examination of forensic images and memory 
+                    dumps from multiple devices (Windows laptops and a desktop) belonging to individuals with interconnected roles – a suspected 
+                    smuggler, an undercover officer, and a drug distributor. This case necessitated the identification of communication patterns, 
+                    the uncovering of hidden files potentially using steganography as suggested by the persona descriptions, and the piecing 
+                    together of the motives and objectives of each individual across different Windows 10 builds. The second scenario involved 
+                    the alien abduction of astronomer Jesse McCarthy's laptop and cat Bingus. This shifted the focus to analyzing recovered 
+                    "UFO crash" artifacts to seek insights into the nature and implications of this extraterrestrial event.
+                </p>
+                <div class="btn-container project-links">
+                    <a href="https://www.youtube.com/watch?v=CJOmn7Bb8iE&t=221s" target="_blank" class="btn btn-color project-btn">Presentation</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-container project-container">
+            <img src="./assets/windows.png" alt="" class="project-img" />
+            <div class="project-card-container">
+                <h2 class="project-sub-title project-title">Vulnerable Windows Test Environment</h2>
+                <p class="project-description">
+                    To provide a practical and controlled setting for cybersecurity education and testing, a deliberately vulnerable 
+                    Windows machine named database was designed and deployed, featuring multiple attack vectors like remote code execution (RCE) 
+                    and weak authentication. Intentionally misconfigured security settings were used to mirror common real-world weaknesses, 
+                    allowing for the simulation of realistic exploitation scenarios. The environment's susceptibility to attacks 
+                    was rigorously validated using industry-standard tools such as Nmap for reconnaissance and Metasploit for exploit 
+                    execution, alongside the exploration of various privilege escalation techniques. 
+                </p>
+                <div class="btn-container project-links">
+                    <a href="https://mirrors.ritsec.cloud/koth_images/" target="_blank" class="btn btn-color project-btn">VM Download</a>
+                    <a href="https://www.youtube.com/watch?v=06zpLy1uPEc&t=32s" target="_blank" class="btn btn-color project-btn">Presentation</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="details-container project-container">
+            <img src="./assets/network.png" alt="" class="project-img" />
+            <div class="project-card-container">
+                <h2 class="project-sub-title project-title">Virtual Domain & Network Infrastructure</h2>
+                <p class="project-description">
+                    A Windows Server was configured with essential client services, including Active Directory, DHCP, DNS, and a pfSense 
+                    gateway, to establish a functional network environment. User accounts, organizational units (OUs), and Group Policy 
+                    Objects (GPOs) were effectively managed across both Linux and Windows client systems, ensuring consistent policy 
+                    enforcement. For version control, remote Git repositories were configured on a Linux server, facilitating collaborative 
+                    development workflows. Secure file transfer capabilities were implemented through a vsftpd server with mounted storage. 
+                    Furthermore, various remote access and file sharing protocols, such as rsync, FTP, Samba, and NFS, were implemented and 
+                    evaluated for their effectiveness. Finally, an Apache webserver with robust SSL/TLS encryption was deployed to provide a 
+                    secure user login interface.
+                </p>
+                <div class="btn-container project-links">
+                </div>
+            </div>
+        </div>
+
+        <div class="details-container project-container">
+            <img src="./assets/mitre.png" alt="" class="project-img" />
+            <div class="project-card-container">
+                <h2 class="project-sub-title project-title">Learn to ATT&CK: Mentorship Group</h2>
+                <p class="project-description">
+                    Employing the MITRE ATT&CK framework within a RITSEC mentorship, adversarial tactics were applied across diverse 
+                    real-world scenarios through hands-on simulations. This practical approach emulated sophisticated cyber-attacks, 
+                    demonstrating a comprehensive understanding of adversary behavior and the techniques, tactics, and 
+                    procedures (TTPs) employed by advanced threat actors.
+                </p>
+                <div class="btn-container project-links">
+                    <a href="https://ritsec.club/" target="_blank" class="btn btn-color project-btn">RITSEC Website</a>
                 </div>
             </div>
         </div>

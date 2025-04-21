@@ -54,7 +54,23 @@
       margin-top: 0;
     }
   }
+
+  /* @media screen and (max-width: 700px) {
+    .project-img {
+      width: 200px;
+      height: 200px;
+      display: block;
+      object-fit: cover; 
+      border-radius: 2rem;
+    }
+  } */
   
+  @media screen and (max-width: 700px) {
+    .nav-links-container {
+      display: none; /* This will completely hide the container and its contents */
+    }
+  }
+
   @media screen and (max-width: 600px) {
     #contact, footer {
       height: 40vh;
@@ -126,20 +142,33 @@
     }
   }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 1200px) {
     .text-container {
       text-align: center; 
     }
-  }
-
-  @media screen and (max-width: 1200px) {
     .project-title{
       text-align: center;
     }
     .project-description {
       text-align: center;
     }
-    /* .project-btn {
-      
-    } */
+    .btn-container, .project-links  {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  @media screen and (min-width: 375px) and (max-width: 575px) {
+    .about-containers {
+      display: flex;
+      flex-direction: column; 
+      align-items: center; 
+    }
+  
+    .details-container {
+      width: 75%; 
+      margin-left: auto; 
+      margin-right: auto; 
+      flex: 0 0 auto;
+    }
   }
