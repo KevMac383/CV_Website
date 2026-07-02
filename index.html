@@ -1,299 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<!-- Header -->
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Kevin McCarthy | Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title> Kevin McCarthy | CV</title>
+<meta name="description" content="Kevin McCarthy, Cybersecurity student at RIT. Incident response, digital forensics, and network security." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+<link rel="stylesheet" href="mediaqueries.css" />
 </head>
-
 <body>
-  <!-- Navigation Section -->
-    <nav id="desktop-nav">
-        <div class="logo">Kevin McCarthy</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#activities">Activities</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Kevin McCarthy</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#top" onclick="toggleMenu()">Home</a></li>
-                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#activities" onclick="toggleMenu()">Activities</a></li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Profile Section -->
-    <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Profile Picture" />
-        </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Kevin McCarthy</h1>
-            <p class="section__text__p2">BS Cybersecurity Student @ RIT</p>
-            <div class="btn-container">
-                <!-- Update Resume When Necessary -->
-                <button class="btn btn-color" onclick="window.open('./assets/kevin-mccarthy-third-year-cyber.pdf')">Resume</button>
-                <button class="btn btn-color" onclick="location.href='./#contact'">Contact Info</button>
-            </div>
-            <div id="socials-container">
-                <a href="https://www.linkedin.com/in/kev-mac/" target="_blank">
-                    <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" />
-                </a>
-                <a href="https://github.com/KevMac383/" target="_blank">
-                    <img src="./assets/github.png" alt="Github" class="icon" />
-                </a>
-            </div>
-        </div>
-    </section>
-   
-    <!-- About Section -->
-    <section id="about">
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Professional Picture" class="about-pic" />
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/skills.png" alt="" class="icon" />
-                        <h3>Working Knowledge</h3>
-                        <p>Incident Response, Digital Forensics, Ethical Hacking, and Network Security</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="" class="icon" />
-                        <h3>Education</h3>
-                        <p>Bachelors in Cybersecurity<br />Minor in System Administration</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>
-                        Focused and driven third-year Cybersecurity student actively seeking co-op opportunities throughout 2025 & 2026
-                        in both Cybersecurity and Networking fields. Eager to expand upon current foundational knowledge 
-                        through practical, hands-on experience. Flexible to adjust availability to meet organizational needs.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
+<div class="cursor-glow" id="cursorGlow"></div>
 
-    <!-- Activities Section -->
-    <section id="activities">
-      <h1 class="title">Activities</h1>
-      <div class="about-containers">
-          <div class="details-container">
-              <div class="article-container"><img src="./assets/ritsec-logo.png" alt="" class="activities-img"/></div>
-              <h2 class="activities-sub-title">RITSEC</h2>
-              <p>
-                Active member of RIT's largest academic club. Focused on furthering student's cybersecurity development
-                according to their motto "Security Through Community" with student-led efforts including education, research, 
-                interest groups, and renowned competitions such as IRSeC, ISTS, and RITSEC CTF, attracting global talent.
-              </p>
-          </div>
+<header>
+  <div class="nav-inner">
+    <a href="#hero" class="nav-logo">kevin<span>@</span>mccarthy</a>
+    <ul class="nav-links">
+      <li><a href="#credentials">credentials</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#activities">activities</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+    <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="mobileNav">
+    <a href="#credentials" onclick="toggleMenu()">credentials</a>
+    <a href="#experience" onclick="toggleMenu()">experience</a>
+    <a href="#activities" onclick="toggleMenu()">activities</a>
+    <a href="#projects" onclick="toggleMenu()">projects</a>
+    <a href="#skills" onclick="toggleMenu()">skills</a>
+    <a href="#contact" onclick="toggleMenu()">contact</a>
+  </nav>
+</header>
 
-          <div class="details-container color-container">
-              <div class="article-container"><img src="./assets/cyber-comps.png" alt="" class="activities-img"/></div>
-              <h2 class="activities-sub-title">Cyber Competitions</h2>
-              <p>
-                Demonstrated skills in incident response and penetration testing through competitive events, including 
-                1st place finishes in University of Buffalo Lockdown and CORA II. Additionally collaborated on RIT 
-                competition development, contributing to competition logging and King of the Hill (KoTH) challenge design 
-                and implementation.
-              </p>
-          </div>
-
-          <div class="details-container color-container">
-              <div class="article-container"><img src="./assets/rock-climbing.png" alt="" class="activities-img"/></div>
-              <h2 class="activities-sub-title">Rock Climbing Club</h2>
-              <p>
-                Dedicated indoor boulderer who has developed valuable skills in strategic thinking, risk management, 
-                and perseverance through progressively difficult climbs. Proven ability to set realistic goals, 
-                adapt to dynamic situations, and work effectively both independently and in group settings.
-              </p>
-          </div>
+<section id="hero">
+  <div class="hero-grid" id="heroGrid">
+    <div>
+      <p class="hero-terminal" id="bootLine">&nbsp;</p>
+      <h1 class="hero-name">Kevin McCarthy</h1>
+      <p class="hero-role">BS Cybersecurity, RIT <span class="accent">//</span> Networking &amp; Cloud Security </p>
+      <p class="hero-desc">
+        Fourth-year cybersecurity student building hands-on experience in networking, cloud security,
+        governance risk & compliance, and incident response.
+      </p>
+      <p class="hero-desc hero-desc-seeking">
+        Seeking full time employment starting January 2027.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-solid" href="./assets/kdm_resume.pdf" target="_blank" rel="noopener">Resume</a>
+        <a class="btn btn-ghost" href="https://www.linkedin.com/in/kev-mac/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn btn-ghost" href="#contact">Contact</a>
       </div>
-  </section>
+    </div>
+    <div class="hero-frame" id="heroFrame">
+      <img id="heroImg" data-src="./assets/profile-pic.png" alt="Kevin McCarthy" />
+    </div>
+  </div>
+</section>
 
-    <!-- Projects Section -->
-    <section id="projects">
-        <h1 class="title">Projects</h1>
-        <div class="details-container project-container">
-            <img src="./assets/vfw.png" alt="" class="project-img" />
-            <div class="project-card-container">
-                <h2 class="project-sub-title project-title">Freddie L. Jackson Citizenship Award</h2>
-                <p class="project-description">
-                    Initiative's founder and active manager establishing the website, eligibility criteria, 
-                    and selection process for evaluating award recipient submissions, enabling the distribution 
-                    of over $1,000 to underrepresented students attending West Haven High School in Connecticut, 
-                    directly supporting their educational pursuits.
-                </p>
-                <div class="btn-container project-links">
-                    <a href="https://www.fljcitizenshipaward.com/" target="_blank" class="btn btn-color project-btn">Award Website</a>
-                </div>
-            </div>
-        </div>
+<section id="credentials">
+  <div class="about-grid">
+    <div class="about-text">
+      <p class="eyebrow">credentials</p>
+      <h2 class="section-title">Clearance &amp; certifications</h2>
+      <p>
+        Actively cleared and pursuing industry certifications to complement hands-on
+        technical experience in cybersecurity and networking.
+      </p>
+    </div>
+    <div class="stat-cards">
+      <div class="stat-card reveal">
+        <div class="k">SECURITY CLEARANCE</div>
+        <p>Secret (Active) - <span class="stat-highlight">Granted March 2026.</span></p>
+      </div>
+      <div class="stat-card reveal">
+        <div class="k">CERTIFICATIONS</div>
+        <p>CompTIA Security+ (in progress) - <span class="stat-highlight">Anticipated August 2026.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="details-container project-container">
-            <img src="./assets/digital-forensics.png" alt="" class="project-img" />
-            <div class="project-card-container">
-                <h2 class="project-sub-title project-title">Digital Forensics: Case Study</h2>
-                <p class="project-description">
-                    Analysis and extraction of hidden data were performed across two distinct scenarios using digital forensics techniques. 
-                    The first scenario involved a complex drug smuggling operation, requiring the examination of forensic images and memory 
-                    dumps from multiple devices (Windows laptops and a desktop) belonging to individuals with interconnected roles – a suspected 
-                    smuggler, an undercover officer, and a drug distributor. This case necessitated the identification of communication patterns, 
-                    the uncovering of hidden files potentially using steganography as suggested by the persona descriptions, and the piecing 
-                    together of the motives and objectives of each individual across different Windows 10 builds. The second scenario involved 
-                    the alien abduction of astronomer Jesse McCarthy's laptop and cat Bingus. This shifted the focus to analyzing recovered 
-                    "UFO crash" artifacts to seek insights into the nature and implications of this extraterrestrial event.
-                </p>
-                <div class="btn-container project-links">
-                    <a href="https://www.youtube.com/watch?v=CJOmn7Bb8iE&t=221s" target="_blank" class="btn btn-color project-btn">Presentation</a>
-                </div>
-            </div>
-        </div>
+<section id="experience">
+  <p class="eyebrow">experience</p>
+  <h2 class="section-title">On the job</h2>
+  <div class="timeline">
+    <div class="timeline-entry reveal">
+      <div class="timeline-date">Jun 2026 – Present</div>
+      <div class="timeline-marker"><span class="timeline-dot"></span></div>
+      <div class="timeline-content">
+        <h3>Cyber Systems Security Intern</h3>
+        <p class="timeline-org">Lockheed Martin</p>
+        <ul>
+          <li>Integrated NIST 800-53 security controls into system designs, authoring SSPs and POA&amp;Ms to obtain ATO.</li>
+          <li>Led efforts assuring end-to-end RMF process lifecycle to sustain DoD compliance.</li>
+          <li>Conducted STIG compliance scans, documented and remediated findings, and automated evidence collection to accelerate ATO approvals.</li>
+          <li>Collaborated and developed strategies with key stakeholders.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="timeline-entry reveal">
+      <div class="timeline-date">Oct 2021 – Aug 2025</div>
+      <div class="timeline-marker"><span class="timeline-dot"></span></div>
+      <div class="timeline-content">
+        <h3>Home Improvement Contractor</h3>
+        <p class="timeline-org">Seasonal Freelance Worker</p>
+        <ul>
+          <li>Applied carpentry, drywall, painting, flooring, tiling, and landscaping skills to renovation projects for customer-owned rental properties.</li>
+          <li>Volunteered 200+ hours on community home restoration projects, collaborating with diverse teams to enhance living spaces for those in need.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <div class="details-container project-container">
-            <img src="./assets/windows.png" alt="" class="project-img" />
-            <div class="project-card-container">
-                <h2 class="project-sub-title project-title">Vulnerable Windows Test Environment</h2>
-                <p class="project-description">
-                    To provide a practical and controlled setting for cybersecurity education and testing, a deliberately vulnerable 
-                    Windows machine named database was designed and deployed, featuring multiple attack vectors like remote code execution (RCE) 
-                    and weak authentication. Intentionally misconfigured security settings were used to mirror common real-world weaknesses, 
-                    allowing for the simulation of realistic exploitation scenarios. The environment's susceptibility to attacks 
-                    was rigorously validated using industry-standard tools such as Nmap for reconnaissance and Metasploit for exploit 
-                    execution, alongside the exploration of various privilege escalation techniques. 
-                </p>
-                <div class="btn-container project-links">
-                    <a href="https://mirrors.ritsec.cloud/koth_images/" target="_blank" class="btn btn-color project-btn">VM Download</a>
-                    <a href="https://www.youtube.com/watch?v=06zpLy1uPEc&t=32s" target="_blank" class="btn btn-color project-btn">Presentation</a>
-                </div>
-            </div>
-        </div>
-
-        <div class="details-container project-container">
-            <img src="./assets/network.png" alt="" class="project-img" />
-            <div class="project-card-container">
-                <h2 class="project-sub-title project-title">Virtual Domain & Network Infrastructure</h2>
-                <p class="project-description">
-                    A Windows Server was configured with essential client services, including Active Directory, DHCP, DNS, and a pfSense 
-                    gateway, to establish a functional network environment. User accounts, organizational units (OUs), and Group Policy 
-                    Objects (GPOs) were effectively managed across both Linux and Windows client systems, ensuring consistent policy 
-                    enforcement. For version control, remote Git repositories were configured on a Linux server, facilitating collaborative 
-                    development workflows. Secure file transfer capabilities were implemented through a vsftpd server with mounted storage. 
-                    Furthermore, various remote access and file sharing protocols, such as rsync, FTP, Samba, and NFS, were implemented and 
-                    evaluated for their effectiveness. Finally, an Apache webserver with robust SSL/TLS encryption was deployed to provide a 
-                    secure user login interface.
-                </p>
-                <div class="btn-container project-links">
-                </div>
-            </div>
-        </div>
-
-        <div class="details-container project-container">
-            <img src="./assets/mitre.png" alt="" class="project-img" />
-            <div class="project-card-container">
-                <h2 class="project-sub-title project-title">Learn to ATT&CK: Mentorship Group</h2>
-                <p class="project-description">
-                    Employing the MITRE ATT&CK framework within a RITSEC mentorship, adversarial tactics were applied across diverse 
-                    real-world scenarios through hands-on simulations. This practical approach emulated sophisticated cyber-attacks, 
-                    demonstrating a comprehensive understanding of adversary behavior and the techniques, tactics, and 
-                    procedures (TTPs) employed by advanced threat actors.
-                </p>
-                <div class="btn-container project-links">
-                    <a href="https://ritsec.club/" target="_blank" class="btn btn-color project-btn">RITSEC Website</a>
-                </div>
-            </div>
+<section id="activities">
+  <p class="eyebrow">activities</p>
+  <h2 class="section-title">Where the hours go</h2>
+  <div class="log">
+    <div class="log-entry reveal">
+      <div class="idx">RITSEC</div>
+      <div>
+        <h3>RIT Security Club</h3>
+        <p>
+          Active member of RIT's largest academic club, built around the motto "Security Through Community," contributing to
+          student-led education, research, interest groups, mentorship programs, and competitions like IRSeC, ISTS, and the 
+          RITSEC CTF, which draw talent from across the country.
+        </p>
+        <div class="case-links">
+          <a href="https://ritsec.club/" target="_blank" rel="noopener">RITSEC website →</a>
         </div>
       </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills">
-      <h1 class="title">Skills</h1>
-      <div class="about-containers">
-          <div class="details-container">
-            <h3 class="skills-sub-title">Operating Systems</h3>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Windows</div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Linux (RedHat, Ubuntu, Kali) </h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>pfSense</h3></div></article>
-          </div>
-
-          <div class="details-container color-container">
-              <h2 class="skills-sub-title">Coding Languages</h2>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Python</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Java</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>C</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Powershell</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Bash</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>MySQL</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>x86 Assembly</h3></div></article>
-          </div>
-
-          <div class="details-container color-container">
-              <h2 class="skills-sub-title">Cybersecurity Tools</h2>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Git/Github</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Visual Studio/VSCode</h3></div></article>
-                <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Wireshark</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Metasploit</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Nmap</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Data Dog</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Autopsy</h3></div></article>
-              <article><img src="./assets/checkmark.png" alt="" class="icon" /><div><h3>Ghidra</h3></div></article>
-          </div>
+    </div>
+    <div class="log-entry reveal">
+      <div class="idx">COMPETITIONS</div>
+      <div>
+        <h3>Cyber Competitions</h3>
+        <p>
+          Secured 1st-place finishes at University at Buffalo Lockdown and CORA II, demonstrating strong incident response and 
+          penetration testing skills under competitive pressure. Also contributed to building RIT's own competitions, helping 
+          develop logging infrastructure and design King of the Hill (KoTH) style challenges.
+        </p>
       </div>
-  </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="" class="icon contact-icon email-icon" />
-                <p><a href="mailto:kdmcyber00@gmail.com">kdmcyber00@gmail.com</a></p>
-            </div>
+    </div>
+    <div class="log-entry reveal">
+      <div class="idx">FLJ AWARD</div>
+      <div>
+        <h3>Freddie L. Jackson Citizenship Award</h3>
+        <p>
+          Founded and personally manage this award, overseeing the website, eligibility criteria, and evaluation process for 
+          applicants. To date, have awarded over $3,000 to underrepresented students at West Haven High School in Connecticut 
+          to support their pursuit of higher education.
+        </p>
+        <div class="case-links">
+          <a href="https://www.fljcitizenshipaward.com/" target="_blank" rel="noopener">Award website →</a>
         </div>
-    </section>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#top">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                </ul>
-            </div>
-        </nav>
-    </footer>
-    <script src="script.js"></script>
+<section id="projects">
+  <p class="eyebrow">projects</p>
+  <h2 class="section-title">Case files</h2>
+
+   <div class="case reveal">
+    <div class="case-head"><span class="case-id">CASE-01</span><span>Network & Cloud Security</span></div>
+    <div class="case-body">
+      <div class="case-content">
+        <h3>Multi-Platform Cloud Infrastructure</h3>
+        <p>
+          Engineered a cloud and virtualization infrastructure suite across four lab environments, applying Infrastructure as Code (IaC), 
+          high availability, and Zero Trust principles. Built scalable Azure architectures with ARM templates to deploy load-balanced web 
+          tiers with health-based failover, securing admin access via Azure Bastion and centralized Key Vault credential management. 
+          Configured Linux KVM/libvirt and Proxmox VE clusters, covering automated VM lifecycle management, XML-based hardware definitions, 
+          and multi-node migrations.
+        </p>
+        <div class="case-links">
+          <a href="https://github.com/KevMac383/NSSA244-Lab1-ARM/tree/main" target="_blank" rel="noopener">Azure IaC →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case reveal">
+    <div class="case-head"><span class="case-id">CASE-02</span><span>Authentication</span></div>
+    <div class="case-body">
+      <div class="case-content">
+        <h3>Risk-Based Authentication Literature Review</h3>
+        <p>
+          Co-authored a systematic literature review synthesizing 35 sources (2012–2025) on Risk-Based Authentication (RBA), 
+          covering machine-learning risk scoring (Random Forests, feed-forward neural networks, deep reinforcement 
+          learning), real-world deployment gaps, and the security-usability-privacy trade-offs shaping adoption. Findings 
+          included evidence that only 42.31% of audited websites supported MFA and 22.12% blocked obvious account 
+          hijacking attempts, underscoring the gap between RBA's technical maturity and its practical deployment.
+        </p>
+        <div class="case-links">
+          <a href="./assets/Auth_Literature_Review.pdf" target="_blank" rel="noopener">Read More →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case reveal">
+    <div class="case-head"><span class="case-id">CASE-03</span><span>Network & Cloud Security</span></div>
+    <div class="case-body">
+      <div class="case-content">
+        <h3>Segmented Enterprise Network</h3>
+        <p>
+          Architected and deployed a segmented, two-VLAN enterprise network on Proxmox, integrating Windows Server 2022 
+          (AD, DNS, DHCP) with RHEL 10 systems for web, database, and file/print services. Hardened all hosts against CIS 
+          Benchmarks, mapped Group Policy Objects to NIST CSF controls, and configured Wazuh for centralized log aggregation 
+          and threat detection across the environment.
+        </p>
+        <div class="case-links">
+          <a href="./assets/Okema_Cyber_Infrastrucutre_Build_Report.pdf" target="_blank" rel="noopener">Full Report →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+   <div class="case reveal">
+    <div class="case-head"><span class="case-id">CASE-04</span><span>Governance, Risk, & Compliance</span></div>
+    <div class="case-body">
+      <div class="case-content">
+        <h3>Healthcare DR/BCP Technology Assessment</h3>
+        <p>
+          Co-authored a technology risk assessment for a simulated regional healthcare network, evaluating how Identity, 
+          AI, Quantum Computing, and Cloud adoption affect disaster recovery and business continuity. Led the Cloud 
+          Computing analysis, covering geo-redundant backups, HIPAA-compliant storage, and multi-cloud failover strategy 
+          for EHR and telehealth systems, and contributed to the AI section, focused on third-party model risk, PHI data 
+          isolation, and failover planning for automated clinical workflows.
+        </p>
+        <div class="case-links">
+          <a href="./assets/BHN_Technology_Assessment.pdf" target="_blank" rel="noopener">Full Report →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case reveal">
+    <div class="case-head"><span class="case-id">CASE-05</span><span>Offensive Security</span></div>
+    <div class="case-body">
+      <div class="case-content">
+        <h3>Vulnerable Windows Test Environment</h3>
+        <p>
+          Built and deployed an intentionally vulnerable Windows target, 'database,' incorporating RCE and weak authentication 
+          flaws modeled on common real-world misconfigurations. Confirmed exploitation paths through Nmap-based reconnaissance 
+          and Metasploit-driven exploitation, incorporating privilege escalation techniques throughout.
+        </p>
+        <div class="case-links">
+          <a href="https://www.youtube.com/watch?v=06zpLy1uPEc&t=32s" target="_blank" rel="noopener">Presentation →</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="case reveal">
+    <div class="case-head"><span class="case-id">CASE-06</span><span>Infrastructure</span></div>
+    <div class="case-body">
+      <div class="case-content">
+        <h3>Virtual Domain &amp; Network Infrastructure</h3>
+        <p>
+          Built and administered a Windows Server infrastructure featuring Active Directory, DHCP, DNS, and a pfSense gateway. 
+          Managed user accounts, OUs, and GPOs across Linux and Windows clients, ran remote Git repositories on a Linux server, 
+          and set up secure file transfer via vsftpd. Compared file-sharing protocols including rsync, FTP, Samba, and NFS, then 
+          deployed an SSL/TLS-secured Apache web server to enable safe login access.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <p class="eyebrow">skills</p>
+  <h2 class="section-title">Skills & Expertise</h2>
+  <div class="skill-row reveal">
+    <span class="skill-cat">Operating Systems</span>
+    <div class="skill-tags">
+      <span class="tag">Windows</span>
+      <span class="tag">Windows Server</span>
+      <span class="tag">Linux</span>
+      <span class="tag">pfSense</span>
+    </div>
+  </div>
+  <div class="skill-row reveal">
+    <span class="skill-cat">Infrastructure & Networking</span>
+    <div class="skill-tags">
+      <span class="tag">Azure</span>
+      <span class="tag">Proxmox VE</span>
+      <span class="tag">KVM</span>
+      <span class="tag">Active Directory</span>
+      <span class="tag">DNS / DHCP</span>
+      <span class="tag">Group Policy</span>
+      <span class="tag">VLAN Segmentation</span>
+      <span class="tag">Apache</span>
+      <span class="tag">SSL/TLS</span>
+    </div>
+  </div>
+  <div class="skill-row reveal">
+  <span class="skill-cat">Security Tools</span>
+  <div class="skill-tags">
+    <span class="tag">Wazuh</span>
+    <span class="tag">Nmap</span>
+    <span class="tag">Metasploit</span>
+    <span class="tag">Wireshark</span>
+    <span class="tag">Git/GitHub</span>
+  </div>
+  </div>
+  <div class="skill-row reveal">
+  <span class="skill-cat">Frameworks & Standards</span>
+  <div class="skill-tags">
+    <span class="tag">NIST 800-53 / RMF</span>
+    <span class="tag">STIGs</span>
+    <span class="tag">CIS Benchmarks</span>
+    <span class="tag">NIST CSF</span>
+  </div>
+  </div>
+  <div class="skill-row reveal">
+    <span class="skill-cat">Languages & Scripting</span>
+    <div class="skill-tags">
+      <span class="tag">Python</span>
+      <span class="tag">PowerShell</span>
+      <span class="tag">Bash</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact-card">
+    <p class="eyebrow">contact</p>
+    <a class="mail-line" href="mailto:kdmcyber00@gmail.com">kdmcyber00@gmail.com</a>
+    <p class="contact-seeking">Seeking full time employment starting January 2027.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>&copy; 2026 Kevin McCarthy. All rights reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script src="scroll-reveal.js"></script>
+
 </body>
 </html>
