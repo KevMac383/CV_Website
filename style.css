@@ -274,7 +274,7 @@ header:has(.nav-mobile.open) .nav-toggle span:nth-child(3){
 .timeline-entry{
   position: relative;
   display: grid;
-  grid-template-columns: 165px 24px 1fr;
+  grid-template-columns: 24px 1fr;
   gap: 1.5rem;
   padding: 2rem 0;
 }
@@ -284,7 +284,7 @@ header:has(.nav-mobile.open) .nav-toggle span:nth-child(3){
   position: absolute;
   top: calc(2rem + 0.75rem);
   bottom: -2.75rem;
-  left: calc(165px + 1.5rem + 12px);
+  left: 12px;
   width: 1px;
   background: var(--border);
 }
@@ -295,12 +295,7 @@ header:has(.nav-mobile.open) .nav-toggle span:nth-child(3){
   font-size: 0.78rem;
   font-weight: 700;
   color: var(--text-faint);
-  text-align: right;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  height: 1.5rem;
+  margin-bottom: 0.4rem;
 }
 .timeline-marker{
   display: flex;
