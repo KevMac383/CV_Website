@@ -5,12 +5,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title> Kevin McCarthy | CV</title>
 <meta name="description" content="Kevin McCarthy, Cybersecurity student at RIT. Incident response, digital forensics, and network security." />
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Kevin McCarthy | Cybersecurity" />
+<meta property="og:description" content="BS Cybersecurity, RIT. Networking, cloud security, GRC, and incident response. Seeking full time employment starting January 2027." />
+<meta property="og:image" content="./assets/photos/profile-pic.png" />
+<meta property="og:url" content="https://kevmac383.github.io/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Kevin McCarthy | Cybersecurity" />
+<meta name="twitter:description" content="BS Cybersecurity, RIT. Networking, cloud security, GRC, and incident response." />
+<meta name="twitter:image" content="./assets/photos/profile-pic.png" />
+
+<meta name="theme-color" content="#0a0c0f" />
+
 <link rel="icon" type="image/png" sizes="32x32" href="./assets/photos/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="./assets/photos/favicon-16x16.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="./assets/photos/apple-touch-icon.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css" />
 <link rel="stylesheet" href="mediaqueries.css" />
 </head>
@@ -21,25 +35,25 @@
 <header>
   <div class="nav-inner">
     <a href="#hero" class="nav-logo">kevin<span>@</span>mccarthy</a>
-    <ul class="nav-links">
-      <li><a href="#credentials">credentials</a></li>
-      <li><a href="#experience">experience</a></li>
-      <li><a href="#activities">activities</a></li>
-      <li><a href="#projects">projects</a></li>
-      <li><a href="#skills">skills</a></li>
-      <li><a href="#contact">contact</a></li>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#credentials" data-section="credentials">credentials</a></li>
+      <li><a href="#experience" data-section="experience">experience</a></li>
+      <li><a href="#activities" data-section="activities">activities</a></li>
+      <li><a href="#projects" data-section="projects">projects</a></li>
+      <li><a href="#skills" data-section="skills">skills</a></li>
+      <li><a href="#contact" data-section="contact">contact</a></li>
     </ul>
     <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle menu">
       <span></span><span></span><span></span>
     </button>
   </div>
   <nav class="nav-mobile" id="mobileNav">
-    <a href="#credentials" onclick="toggleMenu()">credentials</a>
-    <a href="#experience" onclick="toggleMenu()">experience</a>
-    <a href="#activities" onclick="toggleMenu()">activities</a>
-    <a href="#projects" onclick="toggleMenu()">projects</a>
-    <a href="#skills" onclick="toggleMenu()">skills</a>
-    <a href="#contact" onclick="toggleMenu()">contact</a>
+    <a href="#credentials" data-section="credentials" onclick="toggleMenu()">credentials</a>
+    <a href="#experience" data-section="experience" onclick="toggleMenu()">experience</a>
+    <a href="#activities" data-section="activities" onclick="toggleMenu()">activities</a>
+    <a href="#projects" data-section="projects" onclick="toggleMenu()">projects</a>
+    <a href="#skills" data-section="skills" onclick="toggleMenu()">skills</a>
+    <a href="#contact" data-section="contact" onclick="toggleMenu()">contact</a>
   </nav>
 </header>
 
@@ -174,8 +188,8 @@
   <p class="eyebrow">projects</p>
   <h2 class="section-title">Prominent Projects</h2>
 
-   <div class="case reveal">
-    <div class="case-head"><span class="case-id">PROJECT-01</span><span>Network & Cloud Security</span></div>
+   <div class="case case--featured reveal">
+    <div class="case-head"><span class="case-id">PROJECT-01</span><span class="case-featured-badge">Featured</span><span>Network & Cloud Security</span></div>
     <div class="case-body">
       <div class="case-content">
         <h3>Multi-Platform Cloud Infrastructure</h3>
@@ -340,7 +354,16 @@
 <section id="contact">
   <div class="contact-card">
     <p class="eyebrow">contact</p>
-    <a class="mail-line" href="mailto:kdmcyber00@gmail.com">kdmcyber00@gmail.com</a>
+    <div class="mail-row">
+      <a class="mail-line" href="mailto:kdmcyber00@gmail.com">kdmcyber00@gmail.com</a>
+      <button class="copy-btn" type="button" onclick="copyEmail(this)" aria-label="Copy email address">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="9" y="9" width="13" height="13" rx="2"></rect>
+          <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+        </svg>
+        <span class="copy-btn-label">copy</span>
+      </button>
+    </div>
     <p class="contact-seeking">Seeking full time employment starting January 2027.</p>
   </div>
 </section>
@@ -349,6 +372,74 @@
   <p>&copy; 2026 Kevin McCarthy. All rights reserved.</p>
 </footer>
 
+<button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M12 19V5"></path>
+    <path d="M5 12l7-7 7 7"></path>
+  </svg>
+</button>
+
+<script>
+function copyEmail(btn){
+  const email = "kdmcyber00@gmail.com";
+  const label = btn.querySelector(".copy-btn-label");
+  navigator.clipboard.writeText(email).then(function(){
+    const original = label.textContent;
+    label.textContent = "copied!";
+    btn.classList.add("copy-btn--success");
+    setTimeout(function(){
+      label.textContent = original;
+      btn.classList.remove("copy-btn--success");
+    }, 1800);
+  }).catch(function(){
+    label.textContent = "error";
+  });
+}
+
+/* ===== Back to top button ===== */
+(function(){
+  const btn = document.getElementById("backToTop");
+  if(!btn) return;
+  const toggle = function(){
+    if(window.scrollY > 480){ btn.classList.add("visible"); }
+    else { btn.classList.remove("visible"); }
+  };
+  window.addEventListener("scroll", toggle, { passive: true });
+  toggle();
+  btn.addEventListener("click", function(){
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+})();
+
+/* ===== Scroll-spy active nav state ===== */
+(function(){
+  const sections = Array.from(document.querySelectorAll("section[id]"));
+  const navAnchors = Array.from(document.querySelectorAll('.nav-links a, .nav-mobile a'));
+  if(!sections.length || !navAnchors.length) return;
+
+  const setActive = function(id){
+    navAnchors.forEach(function(a){
+      a.classList.toggle("active", a.dataset.section === id);
+    });
+  };
+
+  const observer = new IntersectionObserver(function(entries){
+    let best = null;
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        if(!best || entry.intersectionRatio > best.intersectionRatio){
+          best = entry;
+        }
+      }
+    });
+    if(best){ setActive(best.target.id); }
+  }, { rootMargin: "-45% 0px -45% 0px", threshold: [0, 0.25, 0.5, 0.75, 1] });
+
+  sections.forEach(function(s){
+    if(s.id !== "hero"){ observer.observe(s); }
+  });
+})();
+</script>
 <script src="script.js"></script>
 <script src="scroll-reveal.js"></script>
 
