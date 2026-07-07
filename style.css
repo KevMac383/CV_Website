@@ -505,17 +505,18 @@ header:has(.nav-mobile.open) .nav-toggle span:nth-child(3){
   justify-content: center;
   gap: 0.75rem;
   margin-bottom: 1.5rem;
+  padding-bottom: 6px;
+  border-bottom: 1px dashed var(--accent-dim);
+  transition: border-color .2s ease;
 }
+.mail-row:hover{ border-bottom-color: var(--accent); }
 .mail-line{
   font-family: var(--f-mono);
   font-size: clamp(1.4rem, 3vw, 2rem);
   font-weight: 600;
   color: var(--text);
   display: inline-block;
-  border-bottom: 1px dashed var(--accent-dim);
-  padding-bottom: 4px;
 }
-.mail-line:hover{ border-bottom-color: var(--accent); }
 .copy-btn{
   display: inline-flex;
   align-items: center;
@@ -530,6 +531,7 @@ header:has(.nav-mobile.open) .nav-toggle span:nth-child(3){
   padding: 0.4rem 0.65rem;
   cursor: pointer;
   transition: border-color .2s ease, color .2s ease;
+  align-self: center;
 }
 .copy-btn:hover{ border-color: var(--accent); color: var(--accent); }
 .copy-btn--success{ border-color: var(--accent); color: var(--accent); }
