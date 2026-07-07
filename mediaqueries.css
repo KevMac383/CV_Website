@@ -28,6 +28,14 @@
   .skill-row{ grid-template-columns: 1fr; gap: 0.6rem; }
 }
 
+@media (max-width: 480px){
+  .case-head span:not(.case-id):not(.case-featured-badge){
+    margin-left: 0;
+    flex: 1 1 100%;
+    text-align: left;
+  }
+}
+
 @media (prefers-reduced-motion: reduce){
   *{ animation-duration: 0.001ms !important; animation-iteration-count: 1 !important; transition-duration: 0.001ms !important; }
   .reveal{ opacity: 1 !important; transform: none !important; }
